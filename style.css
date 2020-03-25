@@ -41,17 +41,20 @@ h6 {
 
 .card {
     width: 48%;
-    height: 200px;
+    height: auto;
+    max-height: 200px;
     background-color: black;
     color: white;
     margin: 5px;
     text-align: center;
     float: left;
     border: 1px solid #f1f1f1;
+    overflow: hidden;
 }
 
 .card a {
     text-decoration: none;
+    font-size: 30px;
 }
 
 .card img {
@@ -61,7 +64,7 @@ h6 {
 }
 
 #home-button {
-    display: block;
+    display: none;
     bottom: 20px;
     right: 20px;
     width: 120px;
@@ -101,5 +104,8 @@ h6 {
     }
     .image {
         max-width: 32%;
+    }
+    #home-button {
+        display: block;
     }
 }
