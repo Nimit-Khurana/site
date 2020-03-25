@@ -15,19 +15,19 @@
     <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
         <!-- Avatar image in top left corner -->
         <img src="profile.jpg" style="width:100%">
-        <a onclick="return highlight('main')" class="tabs w3-bar-item w3-button w3-padding-large w3-black">
+        <a onclick="return highlight('main')" class="nav-tabs w3-bar-item w3-button w3-padding-large">
             <i class="fa fa-home w3-xxlarge"></i>
             <p>HOME</p>
         </a>
-        <a onclick="return highlight('about')" class="tabs w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <a onclick="return highlight('about')" class="nav-tabs w3-bar-item w3-button w3-padding-large w3-hover-black">
             <i class="fa fa-user w3-xxlarge"></i>
             <p>ABOUT</p>
         </a>
-        <a onclick="return highlight('photos')" class="tabs w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <a onclick="return highlight('photos')" class="nav-tabs w3-bar-item w3-button w3-padding-large w3-hover-black">
             <i class="fa fa-eye w3-xxlarge"></i>
             <p>PHOTOS</p>
         </a>
-        <a onclick="return highlight('contact')" class="tabs w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <a onclick="return highlight('contact')" class="nav-tabs w3-bar-item w3-button w3-padding-large w3-hover-black">
             <i class="fa fa-envelope w3-xxlarge"></i>
             <p>CONTACT</p>
         </a>
@@ -62,7 +62,7 @@
             <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
             <p class="w3-wide">Python</p>
             <div class="w3-white">
-                <div class="w3-dark-grey" style="height:28px;width:70%"></div>
+                <div class="w3-dark-grey" style="height:28px;width:50%"></div>
             </div>
             <p class="w3-wide">Linux</p>
             <div class="w3-white">
@@ -78,7 +78,7 @@
             </div>
             <p class="w3-wide">Database</p>
             <div class="w3-white">
-                <div class="w3-dark-grey" style="height:28px;width:30%"></div>
+                <div class="w3-dark-grey" style="height:28px;width:10%"></div>
             </div><br>
             <a class="view-button" target="_blank" href="https://drive.google.com/open?id=1VmFCXtfotqm1DVpaq-jh_9eSCp5IMCHRf6Xe1WHUmXk">
                 <button class="w3-button w3-light-grey w3-padding-large w3-section">
@@ -161,6 +161,7 @@
     <script type="text/javascript">
         function highlight(id) {
             document.getElementById(id).scrollIntoView();
+
         };
     </script>
 
