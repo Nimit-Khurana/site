@@ -1,3 +1,4 @@
+import 'viewerjs/dist/viewer.css';
 import Viewer from 'viewerjs';
 
 const viewer = new Viewer(document.getElementById('images'), {
