@@ -27,6 +27,10 @@ h6 {
     margin-left: 120px
 }
 
+.image {
+    max-width: 33%;
+}
+
 
 /* Remove margins from "page content" on small screens */
 
@@ -36,17 +40,8 @@ h6 {
     }
 }
 
-.hover:hover .project-dropdown-content {
-    display: block;
-}
-
 .view-button {
     text-decoration: none;
-}
-
-.footlink:hover {
-    background-color: black;
-    color: #f1f1f1;
 }
 
 .footer {
@@ -76,18 +71,19 @@ h6 {
 
 @media only screen and (max-width: 600px) {
     .card {
-        width: 40%;
-        height: 100px;
+        width: 48%;
+        height: 80px;
         margin: 3px;
+        overflow: hidden;
+    }
+    .card a {
+        font-size: 15px;
     }
     .card img {
         height: 30px;
         width: 30px;
-        margin: 2px;
     }
-}
-
-.footlink {
-    float: left;
-    width: 50%;
+    .image {
+        max-width: 32%;
+    }
 }
