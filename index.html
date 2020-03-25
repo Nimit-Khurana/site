@@ -15,19 +15,19 @@
     <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
         <!-- Avatar image in top left corner -->
         <img src="profile.jpg" style="width:100%">
-        <a href="#" class="tab w3-bar-item w3-button w3-padding-large w3-black">
+        <a onclick="return highlight('main')" class="tabs w3-bar-item w3-button w3-padding-large w3-black">
             <i class="fa fa-home w3-xxlarge"></i>
             <p>HOME</p>
         </a>
-        <a href="#about" class="tab w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <a onclick="return highlight('about')" class="tabs w3-bar-item w3-button w3-padding-large w3-hover-black">
             <i class="fa fa-user w3-xxlarge"></i>
             <p>ABOUT</p>
         </a>
-        <a href="#photos" class="tab w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <a onclick="return highlight('photos')" class="tabs w3-bar-item w3-button w3-padding-large w3-hover-black">
             <i class="fa fa-eye w3-xxlarge"></i>
             <p>PHOTOS</p>
         </a>
-        <a href="#contact" class="tab w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <a onclick="return highlight('contact')" class="tabs w3-bar-item w3-button w3-padding-large w3-hover-black">
             <i class="fa fa-envelope w3-xxlarge"></i>
             <p>CONTACT</p>
         </a>
@@ -37,9 +37,9 @@
     <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
         <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
             <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-            <a onclick="highlight(event, 'about')" class="tabs w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-            <a href="#photos" class="tabs w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
-            <a href="#contact" class="tabs w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+            <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+            <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+            <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
         </div>
     </div>
 
@@ -149,12 +149,8 @@
         <!-- END PAGE CONTENT -->
     </div>
     <script type="text/javascript">
-        function highlight(evt, id) {
-
-            document.body.style.background = "white";
-            document.getElementById(id).style.display = "block";
-            document.getElementById(id).style.backgroundColor = "black";
-
+        function highlight(id) {
+            document.getElementById(id).scrollIntoView();
         };
     </script>
 
