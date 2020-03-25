@@ -31,15 +31,6 @@ h6 {
     max-width: 33%;
 }
 
-
-/* Remove margins from "page content" on small screens */
-
-@media only screen and (max-width: 600px) {
-    #main {
-        margin-left: 0
-    }
-}
-
 .view-button {
     text-decoration: none;
 }
@@ -69,7 +60,32 @@ h6 {
     margin: 3px;
 }
 
+#home-button {
+    display: block;
+    bottom: 20px;
+    right: 20px;
+    width: 120px;
+    background-color: white;
+    color: black;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1.3px;
+    z-index: 100;
+    padding: 2px 0px 2px 0px;
+    border: 1px solid;
+    border-radius: 100px;
+    opacity: 0.9;
+    text-align: center;
+    cursor: pointer;
+    position: fixed;
+}
+
 @media only screen and (max-width: 600px) {
+    #main {
+        margin-left: 0
+    }
     .card {
         width: 48%;
         height: 80px;
