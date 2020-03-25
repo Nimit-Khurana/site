@@ -86,7 +86,7 @@ h6 {
 }
 
 .nav-tabs:active {
-    background-color: red!important;
+    background-color: grey!important;
 }
 
 @media only screen and (max-width: 600px) {

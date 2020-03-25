@@ -15,19 +15,19 @@
     <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
         <!-- Avatar image in top left corner -->
         <img src="profile.jpg" style="width:100%">
-        <a onclick="return highlight('main')" class="nav-tabs w3-bar-item w3-button w3-padding-large">
+        <a onclick="return highlight(event, 'main')" class="nav-tabs w3-bar-item w3-button w3-padding-large w3-hover-black">
             <i class="fa fa-home w3-xxlarge"></i>
             <p>HOME</p>
         </a>
-        <a onclick="return highlight('about')" class="nav-tabs w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <a onclick="return highlight(event, 'about')" class="nav-tabs w3-bar-item w3-button w3-padding-large w3-hover-black">
             <i class="fa fa-user w3-xxlarge"></i>
             <p>ABOUT</p>
         </a>
-        <a onclick="return highlight('photos')" class="nav-tabs w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <a onclick="return highlight(event, 'photos')" class="nav-tabs w3-bar-item w3-button w3-padding-large w3-hover-black">
             <i class="fa fa-eye w3-xxlarge"></i>
             <p>PHOTOS</p>
         </a>
-        <a onclick="return highlight('contact')" class="nav-tabs w3-bar-item w3-button w3-padding-large w3-hover-black">
+        <a onclick="return highlight(event, 'contact')" class="nav-tabs w3-bar-item w3-button w3-padding-large w3-hover-black">
             <i class="fa fa-envelope w3-xxlarge"></i>
             <p>CONTACT</p>
         </a>
@@ -159,8 +159,17 @@
         <!-- END PAGE CONTENT -->
     </div>
     <script type="text/javascript">
-        function highlight(id) {
+        function highlight(evt, id) {
             document.getElementById(id).scrollIntoView();
+            var x;
+            x = document.getElementsByClassName('nav-tabs');
+            console.log(x[1])
+            for (i = 0; i < x.length; i++) {
+                if (x[i].className.includes("w3-black")) {
+                    x[i].className = x[i].className.replace("w3-black", "");
+                }
+            }
+            evt.currentTarget.className += " w3-black";
 
         };
     </script>
