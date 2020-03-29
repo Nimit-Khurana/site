@@ -4,6 +4,8 @@
 <link rel="icon" href="title.png" type="image/x-icon">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -62,23 +64,23 @@
             <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
             <p class="w3-wide">Python</p>
             <div class="w3-white">
-                <div class="w3-dark-grey" style="height:28px;width:50%"></div>
+                <div class="skills-bar" style="height:28px;width:50%"></div>
             </div>
             <p class="w3-wide">Linux</p>
             <div class="w3-white">
-                <div class="w3-dark-grey" style="height:28px;width:40%"></div>
+                <div class="skills-bar" style="height:28px;width:40%"></div>
             </div>
             <p class="w3-wide">VCS</p>
             <div class="w3-white">
-                <div class="w3-dark-grey" style="height:28px;width:20%"></div>
+                <div class="skills-bar" style="height:28px;width:20%"></div>
             </div>
             <p class="w3-wide">Web Design</p>
             <div class="w3-white">
-                <div class="w3-dark-grey" style="height:28px;width:30%"></div>
+                <div class="skills-bar" style="height:28px;width:30%"></div>
             </div>
             <p class="w3-wide">Database</p>
             <div class="w3-white">
-                <div class="w3-dark-grey" style="height:28px;width:10%"></div>
+                <div class="skills-bar" style="height:28px;width:10%"></div>
             </div><br>
             <a class="view-button" target="_blank" href="https://drive.google.com/open?id=1VmFCXtfotqm1DVpaq-jh_9eSCp5IMCHRf6Xe1WHUmXk">
                 <button class="w3-button w3-light-grey w3-padding-large w3-section">
@@ -149,7 +151,7 @@
 
 
         <!-- Footer -->
-        <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge" style="margin-left:40%;">
+        <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge" style="text-align: center;">
             <a target=_blank href="https://www.instagram.com/_ri_ch_ie"><i class="fa fa-instagram w3-hover-opacity"></i></a>
             <a target=_blank href="https://www.github.com/Nimit-Khurana"><i class="fa fa-github w3-hover-opacity" ></i></a>
             <a target=_blank href="https://www.quora.com/profile/Nimit-Khurana"><i class="fa fa-quora w3-hover-opacity"></i></a>
@@ -163,7 +165,6 @@
             document.getElementById(id).scrollIntoView();
             var x;
             x = document.getElementsByClassName('nav-tabs');
-            console.log(x[1])
             for (i = 0; i < x.length; i++) {
                 if (x[i].className.includes("w3-black")) {
                     x[i].className = x[i].className.replace("w3-black", "");

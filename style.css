@@ -5,7 +5,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Montserrat", sans-serif
+    font-family: 'Sigmar One', cursive, 'Permanent Marker', cursive, "Montserrat", sans-serif
 }
 
 .w3-row-padding img {
@@ -28,11 +28,15 @@ h6 {
 }
 
 .image {
-    max-width: 33%;
+    max-width: 32%;
 }
 
 .view-button {
     text-decoration: none;
+}
+
+*:focus {
+    outline: none;
 }
 
 .footer {
@@ -54,7 +58,12 @@ h6 {
 
 .card a {
     text-decoration: none;
-    font-size: 30px;
+    font-size: 20px;
+}
+
+.card a:hover {
+    color: grey;
+    opacity: 0.7;
 }
 
 .card img {
@@ -85,10 +94,6 @@ h6 {
     position: fixed;
 }
 
-.nav-tabs:active {
-    background-color: grey!important;
-}
-
 @media only screen and (max-width: 600px) {
     #main {
         margin-left: 0
@@ -112,4 +117,27 @@ h6 {
     #home-button {
         display: block;
     }
+}
+
+.skills-bar {
+    background-color: #616161!important
+}
+
+.white-background {
+    color: #000!important;
+    background-color: #fff!important;
+}
+
+.black {
+    color: #fff!important;
+    background-color: #000!important
+}
+
+.light-grey {
+    color: #f1f1f1!important;
+}
+
+.light-grey-button {
+    color: #000!important;
+    background-color: #f1f1f1!important
 }
