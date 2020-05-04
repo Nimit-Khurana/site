@@ -1,13 +1,16 @@
-var topMenu = $("#top-menu"),
-    topMenuHeight = topMenu.outerHeight() + 15,
+var lastId,
+    topMenu = $("#nav"),
+    topMenuHeight = $("#nav").outerHeight() + 15,
     // All list items
     menuItems = topMenu.find("a"),
     // Anchors corresponding to menu items
     scrollItems = menuItems.map(function() {
         var item = $($(this).attr("href"));
-        if (item.length) { return item; }
+        if (item.length) {
+            return item;
+        }
     });
-
+console.log(menuItems);
 // Bind to scroll
 $(window).scroll(function() {
     // Get container scroll position
@@ -23,6 +26,6 @@ $(window).scroll(function() {
     var id = cur && cur.length ? cur[0].id : "";
     // Set/remove active class
     menuItems
-        .parent().removeClass("active")
-        .end().filter("[href='#" + id + "']").parent().addClass("active");
-});​
+        .parent().removeClass("w3-black")
+        .end().filter("[href='#" + id + "']").parent().addClass("w3-black");
+});
